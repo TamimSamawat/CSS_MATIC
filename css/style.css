@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+}
+.box{
+	width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+.shadow{
+	width: 25%;
+    margin: 50px;
+    padding: 40px;
+    background: limegreen;
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    float: left;
+}
+.noise{
+	width: 25%;
+    margin: 50px;
+    padding: 40px;
+    background: hotpink;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.70);
+    float: left;
+}
+.radius{
+	width: 25%;
+    margin: 50px;
+    padding: 40px;
+    background: violet;
+    border-radius: 0px 50px 10px 54px;
+    border: 0px solid #000000;
+    float: left;
+}
+#talkbubble{
+	margin: 90px auto;
+    padding: 100px;
+    width: 25%;
+    height: 100px;
+    background: lightpink;
+    position: relative;
+    border-radius: 10px;
+    float: left;
+}
+#talkbubble::before{
+	content: "";
+    position: absolute;
+    left: 60%;
+    top: 300px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 127px solid transparent;
+    border-top: 60px solid #0C1019;
+}
